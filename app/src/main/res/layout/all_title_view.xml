@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/all_left"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/all_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="2dip"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/all_title"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="吉林省纪委"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/all_right"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="13dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/all_right_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dip"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

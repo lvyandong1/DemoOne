@@ -1,0 +1,58 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Anim_Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Anim_Theme" parent="ActivityAnim">
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+        <item name="android:windowBackground">@color/common_gray_two_color</item>
+    </style>
+
+    <style name="ActivityAnim">
+        <item name="@android:activityOpenEnterAnimation">@anim/home_push_leftin</item>
+        <item name="@android:activityOpenExitAnimation">@anim/home_push_leftout</item>
+        <item name="@android:activityCloseEnterAnimation">@anim/home_push_rightin</item>
+        <item name="@android:activityCloseExitAnimation">@anim/home_push_rightout</item>
+    </style>
+    <style name="tabLinearLayout">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="tabImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">matrix</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+    <style name="tabTextView_focus">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_s</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="tabTextView_nofocus">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_s</item>
+        <item name="android:textColor">@color/darker</item>
+    </style>
+
+</resources>
